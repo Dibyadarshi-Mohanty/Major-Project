@@ -1,0 +1,23 @@
+<% layout("/layouts/boilerplate") -%>
+<link
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<div class="login-form">
+<div class="col-sm-12 col-lg-6  border border-primary rounded ">
+    <h1 class="text-center"><b>Login for Wanderlust</b></h1>
+    <form action="/login" method="post" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label for="username"  class="form-label">Username</label>
+            <input type="text" class="form-control" name="username"  placeholder="Enter username" required>
+            <div class="invalid-feedback">username should be valid.</div>
+          </div>
+        <div class="form-group">
+          <label for="password"  class="form-label">Password</label>
+          <input type="password" class="form-control" name="password" placeholder="Password" required>
+          <div class="invalid-feedback">password should be valid.</div>
+        </div>
+        <button type="submit" class="btn btn-primary mb-3 ">Login</button>
+      </form>
+</div>
+</div>
